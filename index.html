@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+        function SetUsername(){
+            console.log("Set Username")
+            document.getElementById("my-username").innerHTML = document.getElementById("Username").value + "'s Gallery";
+        }
+        function SetImage(){
+            console.log("Set Profile Image")
+            document.getElementById("Profile").style.backgroundImage ="url(" + document.getElementById("Image").value + ")"; //url(link img)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="Profile"></div>
+            <div class="noti">!</div>
+        </div>
+        <div class="username">
+            <a href="https://github.com/zedl3all" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="my-username">zedl3all's Gallery</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div>
+                <label style="font-size: large; font-weight: 400;">Username</label>
+                <input type="text" id="Username" style="margin-left: 10px;">
+                <button id="Set-Username" onclick="SetUsername()">Apply</button>
+            </div>
+            <div>
+                <label style="font-size: large; font-weight: 400;">Profile-Image</label>
+                <input type="text" id="Image" style="margin-left: 10px;">
+                <button id="Set-Profile" onclick="SetImage()">Apply</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url(https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/ec0ec469077e9c5f1c7fd33e03f3510a.gif);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/89a9cbaf05a50b7f8a4f53ac0f0c26a9.gif);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/324401aa18cc80c55f338dcd4674cb80.gif);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/a62b8a4bdb78de6afe2ab926bffa655a.gif);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/c672d9c3c482b1eb7078898bb92adcf2.gif);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/d04f9aba696764b04ac75aaac56916f1.gif);"></div>
+            <div class="gallery-item row-span" style="background-image: url(./Image/baa0a633c815f5db498efd0959ebc0ab.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/dd42ec4afcd65452b9d17e47cb5fae2a.gif);"></div>
+            <div class="gallery-item" style="background-image: url(./Image/4be4ce75ffac9339b002a96936095d77.gif);"></div>
+            <!-- <div class="gallery-item"></div> -->
+            <!-- <div class="gallery-item"></div>
+            <div class="gallery-item"></div> -->
+        </div>
+    </div>
+</body>
+
+</html>
